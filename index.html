@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>A Multiplayer Game</title>
+    <style>
+      canvas {
+        width: 800px;
+        height: 600px;
+        border: 5px solid black;
+      }
+    </style>
+    <script src="/socket.io/socket.io.js"></script>
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <div className = "Player-Control-Panel">
+      <button onclick="leaveCallback()">Leave Game</button>
+      <button onclick="joinCallback()">Join Game</button>
+    </div>
+  </body>
+  <script src="/static/game.js"></script>
+</html>
